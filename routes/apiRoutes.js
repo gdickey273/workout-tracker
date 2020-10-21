@@ -43,15 +43,21 @@ router.put("/api/workouts/:id", async (req, res) => {
   .catch(err => {
     res.status(400).json(err);
   });
-  console.log("saved!");
-  // Workout.updateOne(
-  //   { _id: req.params.id},
-  //   { 
-  //     $push: { exercises: req.body },
-  //     $set: { totalDuration: totalDuration ? totalDuration + req.body.duration : req.body.duration}
-  //   }
-  //   )
-  //   
+  console.log("saved!");  
+});
+
+router.get("/api/workouts/range", (req, res) => {
+  Workout.find({})
+  .sort({ "day": -1 })
+  .limit(7)
+  .exec((err, docs) => {
+    if (err) res.status(404).json(err);
+    res.status(200).json(docs);
+  })
+});
+
+router.delete("/api/workouts", ({ body }, res) => {
+  Workout.findByIdAndDelete(body.id);
 });
 
 module.exports = router;
