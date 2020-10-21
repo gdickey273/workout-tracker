@@ -13,7 +13,11 @@ router.get("/api/workouts", (req, res) => {
 });
 
 router.post("/api/workouts", (req, res) => {
-  Workout.create(req.body)
+  const newWorkout = new Workout(req.body);
+
+  newWorkout.calculateDuration();
+  
+  Workout.create(newWorkout)
   .then(dbWorkout => {
     res.json(dbWorkout);
   })
