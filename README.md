@@ -20,14 +20,14 @@
 
   ### Usage Screenshots  
   Home Page
-  ![Home Page Screenshot](/images/home-page.png)
+  ![Home Page Screenshot](public/images/home-page.png)
 
   Creating New Workout
-  ![New Workout Screenshot](/images/new-workout.png)
-  ![New Workout Details Screenshot](/images/new-workout-details.png)
+  ![New Workout Screenshot](public/images/new-workout.png)
+  ![New Workout Details Screenshot](public/images/new-workout-details.png)
 
   Workout Dashboard
-    ![Workout Dashboard](/images/workout-dashboard.png)
+    ![Workout Dashboard](public/images/workout-dashboard.png)
 
   ## Credits 
   * Graham Dickey gdickey273
