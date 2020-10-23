@@ -27,7 +27,7 @@
   ![New Workout Details Screenshot](public/images/new-workout-details.png)
 
   Workout Dashboard
-    ![Workout Dashboard](public/images/workout-dashboard.png)
+    ![Workout Dashboard](public/images/dashboard.png)
 
   ## Credits 
   * Graham Dickey gdickey273
